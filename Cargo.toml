@@ -17,3 +17,4 @@ calx-ecs = "0.5"
 froggy = "0.3"
 constellation = "0.2"
 rand = "*"
+alex = { git = "https://github.com/omni-viral/alex.git" }
