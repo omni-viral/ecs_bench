@@ -16,17 +16,17 @@ use ecs_bench::pos_vel::{Acceleration, Position, Velocity, N_POS, N_POS_PER_ACC,
 
 struct PosComp(Position);
 impl Component for PosComp {
-    type Storage = VecStorage<PosComp>;
+    type Storage = DenseVecStorage<PosComp>;
 }
 
 struct VelComp(Velocity);
 impl Component for VelComp {
-    type Storage = VecStorage<VelComp>;
+    type Storage = DenseVecStorage<VelComp>;
 }
 
 struct AccelComp(Acceleration);
 impl Component for AccelComp {
-    type Storage = VecStorage<AccelComp>;
+    type Storage = DenseVecStorage<AccelComp>;
 }
 
 struct VelSys;
